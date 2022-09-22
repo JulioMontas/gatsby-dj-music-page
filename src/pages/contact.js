@@ -10,7 +10,7 @@ export default function ContactPage() {
         <meta name="description" content="From the Dominican Republic based in NYC." />
         <link rel="canonical" href="https://montas.nyc/contact" />
       </Helmet>
-      <a href='mailto:Montas@Duck.com' className="text-2xl font-bold">Montas@Duck.com</a>
+      <a href='mailto:montas@duck.com' className="text-2xl font-bold">montas@duck.com</a>
     </Layout>
   )
 }

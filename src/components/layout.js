@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
   `)
   return (
     <>
-      <div className="grid grid-cols-1 place-items-center bg-[#393939] h-[95vh] text-[#FFEA00]">
+      <div className="grid grid-cols-1 place-items-center bg-[#393939] h-[95vh]">
         <div className="container grid grid-cols-1 place-items-center">
           {children}
         </div>
