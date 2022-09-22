@@ -13,13 +13,13 @@ export default function MixesPage() {
       </Helmet>
       <ul className="flex gap-[2.75rem]">
         <li className="">
-          <Link className="" to="/mixes">Mixes 01</Link>
+          <Link className="block bg-[rgba(216,216,216,0.10)] border-2 border-[#ECD905] h-[80vh] w-72 rounded-tl-[195.5px] rounded-tr-[10px] rounded-br-[195.5px] rounded-bl-[30px]" to="/mixes">01</Link>
         </li>
         <li className="">
-          <Link className="" to="/mixes">Mixes 02</Link>
+          <Link className="block bg-[rgba(216,216,216,0.10)] border-2 border-[#ECD905] h-[80vh] w-72 rounded-tl-[195.5px] rounded-tr-[195.5px] rounded-br-[10px] rounded-bl-[108px]" to="/mixes">02</Link>
         </li>
         <li className="">
-          <Link className="" to="/mixes">Mixes 03</Link>
+          <Link className="block bg-[rgba(216,216,216,0.10)] border-2 border-[#ECD905] h-[80vh] w-72 rounded-tl-[0] rounded-tr-[195.5px] rounded-br-[29px] rounded-bl-[195.5px]" to="/mixes">03</Link>
         </li>
       </ul>
     </Layout>
