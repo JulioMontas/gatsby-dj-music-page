@@ -10,6 +10,7 @@ export default function IndexPage() {
         <meta name="description" content="From the Dominican Republic based in NYC." />
         <link rel="canonical" href="https://montas.nyc/" />
       </Helmet>
+
       <svg height="240" width="400">
         <polygon points="220,10 300,210 123,234" fill="#FFEA00"/>
       </svg>
