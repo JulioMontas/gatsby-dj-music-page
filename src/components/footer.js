@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 
 const Footer = ({ siteTitle }) => (
 
-  <div className="bg-[#393939] fixed bottom-0 left-0 right-0 py-5">
+  <div className="bg-[#393939] fixed bottom-0 left-0 right-0 py-5 h-[5vh]">
     <div className="flex items-center justify-around text-[#FFEA00] font-bold uppercase tracking-widest">
 
       <h1 className="xm:text-sm lg:text-2xl">
