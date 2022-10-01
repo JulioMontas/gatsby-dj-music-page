@@ -4,6 +4,7 @@ import Layout from "../../components/layout"
 import { Link } from 'gatsby'
 import { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
+import "./styles.css";
 
 const easing = [.6, -.05, .01, .99];
 
@@ -31,6 +32,11 @@ const stagger = {
 };
 
 export default function MixesPage() {
+
+  const ref = useRef(null);
+  const { scrollXProgress } = useScroll({ container: ref });
+
+  console.log(scrollXProgress);
   return (
     <Layout>
       <Helmet>
@@ -38,8 +44,19 @@ export default function MixesPage() {
         <meta name="description" content="From the Dominican Republic based in NYC." />
         <link rel="canonical" href="https://montas.nyc/mixes" />
       </Helmet>
+      <svg id="progress" width="50" height="50" viewBox="0 0 50 50">
+        <circle cx="25" cy="25" r="15" pathLength="1" className="bg" />
+        <motion.circle
+          cx="25"
+          cy="25"
+          r="15"
+          pathLength="1"
+          className="indicator"
+          style={{ pathLength: scrollXProgress }}
+        />
+      </svg>
       <motion.div exit={{ opacity: 0 }} initial='initial' animate='animate'>
-        <motion.ul variants={stagger} className="container w-full flex gap-[1rem] overflow-x-scroll ...">
+        <motion.ul variants={stagger} ref={ref} className="container w-full flex gap-[1rem] overflow-x-scroll ...">
           <motion.li variants={fadeInUp}>
             <Link className="block bg-[rgba(150,150,150,0.10)] border-2 border-[#ECD905] h-[75vh] w-[280px] rounded-tl-[195.5px] rounded-tr-[10px] rounded-br-[195.5px] rounded-bl-[30px] hover:border-[#333] transition-all duration-700" to="/mixes/01"></Link>
           </motion.li>
