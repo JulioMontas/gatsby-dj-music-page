@@ -37,7 +37,7 @@ export default function AboutPage() {
         <link rel="canonical" href="https://montas.nyc/about" />
       </Helmet>
       <motion.div exit={{ opacity: 0 }} initial='initial' animate='animate'>
-        <motion.div variants={stagger}>
+        <motion.div variants={stagger} className="grid sm:gap-[10px]">
           <motion.p variants={fadeInUp} className="sm:text-xl lg:text-5xl lg:leading-[5rem] xm:leading-[2.2rem] text-[#facc15] font-bold">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lectus libero, finibus et consectetur. Curabitur pharetra ac turpis ac consectetur pellentesque lobortis upretit
           </motion.p>
