@@ -19,9 +19,9 @@ const Layout = ({ children }) => {
       <div className="grid grid-cols-1 place-items-center bg-[#393939] h-full w-full absolute">
         <div className="container grid grid-cols-1 place-items-center">
           <motion.main
-            initial={{ opacity: 0, x: -200 }}
+            initial={{ opacity: 0, x: 200 }}
             animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: 200 }}
+            exit={{ opacity: 0, x: -200 }}
             transition={{
               type: "spring",
               mass: 0.35,
