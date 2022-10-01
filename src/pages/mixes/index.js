@@ -44,17 +44,19 @@ export default function MixesPage() {
         <meta name="description" content="From the Dominican Republic based in NYC." />
         <link rel="canonical" href="https://montas.nyc/mixes" />
       </Helmet>
-      <svg id="progress" width="50" height="50" viewBox="0 0 50 50">
-        <circle cx="25" cy="25" r="15" pathLength="1" className="bg" />
+      <div className="fixed">
+      <svg width="50" height="50" viewBox="0 0 50 50" className="transform-[rotate(-90deg)]">
+        <circle cx="25" cy="25" r="15" pathLength="1" className="stroke-[yellow]" />
         <motion.circle
           cx="25"
           cy="25"
           r="15"
           pathLength="1"
-          className="indicator"
+          className="stroke-[#888]"
           style={{ pathLength: scrollXProgress }}
         />
       </svg>
+      </div>
       <motion.div exit={{ opacity: 0 }} initial='initial' animate='animate'>
         <motion.ul variants={stagger} ref={ref} className="container w-full flex gap-[1rem] overflow-x-scroll ...">
           <motion.li variants={fadeInUp}>
