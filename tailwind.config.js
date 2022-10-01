@@ -6,11 +6,12 @@ module.exports = {
   ],
   theme: {
     screens: {
-      xm: '320px',
-      sm: '480px',
+      sm: '320px',
       md: '768px',
-      lg: '976px',
-      xl: '1440px',
+      lg: '1024px',
+      xl: '1280px',
+      xxl: '1440px',
+      xxxl: '1536px',
     },
     colors: {
       'black': '#333',

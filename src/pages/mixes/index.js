@@ -7,7 +7,7 @@ export default function MixesPage() {
   return (
     <Layout>
       <Helmet>
-        <title>Mixes • DJ & Producer - Minimal Electronic Music</title>
+        <title>Mixes • DJ & Producer – The Official Website</title>
         <meta name="description" content="From the Dominican Republic based in NYC." />
         <link rel="canonical" href="https://montas.nyc/mixes" />
       </Helmet>
