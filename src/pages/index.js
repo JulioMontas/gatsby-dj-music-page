@@ -12,11 +12,11 @@ export default function IndexPage() {
         <link rel="canonical" href="https://montas.nyc/" />
       </Helmet>
 
-      <svg height="240" width="400" className="xm:block lg:hidden">
+      <svg height="240" width="400" className="sm:block lg:hidden">
         <polygon points="220,10 300,210 123,234" fill="#FFEA00"/>
       </svg>
 
-      <video autoPlay loop className="xm:hidden lg:block" style={{
+      <video autoPlay loop className="sm:hidden lg:block" style={{
         right: `0`,
         bottom: `0`,
         minWidth: `100%`,

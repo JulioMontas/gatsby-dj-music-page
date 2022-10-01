@@ -1,31 +1,43 @@
 module.exports = {
   siteMetadata: {
-    title: `montas-frontent`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `Montas.NYC`,
+    siteUrl: `https://montas.nyc/`,
+    description: `Blazing fast modern site generator for React`,
+    twitterUsername: `@montas.nyc`,
   },
-  plugins: ["gatsby-plugin-postcss", {
-    resolve: 'gatsby-plugin-google-analytics',
-    options: {
-      "trackingId": "00000000"
-    }
-  }, "gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sitemap", {
-    resolve: 'gatsby-plugin-manifest',
-    options: {
-      "icon": "src/images/icon.png"
-    }
-  }, "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "images",
-      "path": "./src/images/"
+  plugins: [
+    "gatsby-plugin-postcss",
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        "trackingId": "00000000"
+      }
     },
-    __key: "images"
-  }, {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "pages",
-      "path": "./src/pages/"
+    "gatsby-plugin-image",
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sitemap", {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        "icon": "src/images/icon.png"
+      }
     },
-    __key: "pages"
-  }]
+    "gatsby-plugin-mdx",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp", {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        "name": "images",
+        "path": "./src/images/"
+      },
+      __key: "images"
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        "name": "pages",
+        "path": "./src/pages/"
+      },
+      __key: "pages"
+    }
+  ]
 };
