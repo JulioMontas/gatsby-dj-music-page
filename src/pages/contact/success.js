@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../../components/layout"
 
-export default function ThanksPage() {
+export default function SuccessPage() {
   return (
     <Layout>
       <div className="content">

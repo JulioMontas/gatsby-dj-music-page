@@ -1,4 +1,5 @@
 import * as React from "react"
+import { navigate } from "gatsby-link";
 import {Helmet} from "react-helmet";
 import Layout from "../../components/layout"
 import { motion } from "framer-motion"
@@ -28,52 +29,130 @@ const stagger = {
   }
 };
 
-export default function ContactPage() {
-  return (
-    <Layout>
-      <Helmet>
-        <title>Contact Me • DJ & Producer – The Official Website</title>
-        <meta name="description" content="From the Dominican Republic based in NYC." />
-        <link rel="canonical" href="https://montas.nyc/contact" />
-      </Helmet>
-      <motion.div exit={{ opacity: 0 }} initial='initial' animate='animate'>
-        <motion.div variants={stagger}>
-          <motion.a variants={fadeInUp} href='mailto:montas@duck.com' className="text-2xl font-bold justify-self-end text-[#FFEA00] hover:underline">M O N T A S@Duck.com</motion.a>
-          <motion.p variants={fadeInUp} className="font-bold justify-self-end text-[#facc15]">Contact me for booking or collaborations.</motion.p>
+function encode(data) {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+}
 
+export default class Index extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { isValidated: false };
+  }
 
-          <div className="absolute w-full md:w-2/3">
-          <form
-            name="contact"
-            method="POST"
-            netlify-honeypot="bot-field"
-            data-netlify="true"
-          >
-            <p class="hidden">
-              <label>
-                Don’t fill this out if you’re human: <input name="bot-field" />
-              </label>
-            </p>
-            <p>
-              <label>
-                Email: <input type="text" name="email" />
-              </label>
-            </p>
-            <p>
-              <label>
-                Message: <textarea name="message"></textarea>
-              </label>
-            </p>
-            <p>
-              <button type="submit">Send</button>
-            </p>
-          </form>
+  handleChange = (e) => {
+    this.setState({ [e.target.name]: e.target.value });
+  };
+
+  handleSubmit = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": form.getAttribute("name"),
+        ...this.state,
+      }),
+    })
+      .then(() => navigate(form.getAttribute("action")))
+      .catch((error) => alert(error));
+  };
+
+  render() {
+    return (
+      <Layout>
+        <div style={{
+          background:`#1d3851`,
+          padding:`3rem 1rem 5rem`
+        }}>
+
+        <div className="container">
+          <div style={{width:`100%`}}>
+
+            <div>
+              <form
+                name="contact"
+                method="post"
+                action="/contact/success/"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+                onSubmit={this.handleSubmit}
+              >
+                {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+                <input type="hidden" name="form-name" value="contact" />
+                <div hidden>
+                  <label>
+                    Don’t fill this out:{" "}
+                    <input name="bot-field" onChange={this.handleChange} />
+                  </label>
+                </div>
+                <div className="field">
+
+                  <label className="label" htmlFor={"name"}>
+                    Your Name
+                  </label>
+
+                  <div className="control">
+                    <input
+                      placeholder="First and Last name"
+                      type={"text"}
+                      name={"name"}
+                      onChange={this.handleChange}
+                      id={"name"}
+                      required={true}
+                    />
+                  </div>
+                </div>
+
+                <div className="field">
+
+                  <label className="label" htmlFor={"email"}>
+                    E-mail
+                  </label>
+
+                  <div className="control">
+                    <input
+                      placeholder="hello@domain.com"
+                      type={"email"}
+                      name={"email"}
+                      onChange={this.handleChange}
+                      id={"email"}
+                      required={true}
+                    />
+                  </div>
+                </div>
+                <div className="field">
+                  <div style={{marginBottom:`1.2em`}}>
+                    <label htmlFor={"message"}>
+                      Message
+                    </label>
+                  </div>
+                  <div className="control">
+                    <textarea
+                      placeholder="Brief description of your legal issue"
+                      name={"message"}
+                      onChange={this.handleChange}
+                      id={"message"}
+                      required={true}
+                    />
+                  </div>
+                </div>
+
+                <div className="field">
+                  <button type="submit">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+
           </div>
+        </div>
 
-
-
-        </motion.div>
-      </motion.div>
-    </Layout>
-  )
+        </div>
+      </Layout>
+    );
+  }
 }
