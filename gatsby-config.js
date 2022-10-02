@@ -6,6 +6,7 @@ module.exports = {
     twitterUsername: `@montas.nyc`,
   },
   plugins: [
+    "gatsby-plugin-netlify-cms",
     "gatsby-plugin-postcss",
     {
       resolve: 'gatsby-plugin-google-analytics',
