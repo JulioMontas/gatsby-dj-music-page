@@ -1,5 +1,4 @@
 import * as React from "react"
-import { navigate } from "gatsby-link";
 import {Helmet} from "react-helmet";
 import Layout from "../../components/layout"
 import { motion } from "framer-motion"
@@ -29,12 +28,6 @@ const stagger = {
   }
 };
 
-function encode(data) {
-  return Object.keys(data)
-    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
-}
-
 export default function ContactPage() {
   return (
     <Layout>
@@ -50,40 +43,26 @@ export default function ContactPage() {
 
 
           <div className="absolute w-full md:w-2/3">
-
-            <div className="w-5/6 md:w-1/3">
-              <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 "
-                name="contact"
-                method="post"
-                action="/contact/thanks/"
-                data-netlify="true"
-                data-netlify-honeypot="bot-field"
-              >
-
-                <div className="field mb-6">
-                  <label className="label block text-gray-700 text-sm font-bold mb-2" htmlFor={"email"}>
-                    Email
-                  </label>
-                  <div className="control">
-                    <input
-                      className="input bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
-                      placeholder="Email"
-                      type={"email"}
-                      name={"email"}
-                      id={"email"}
-                    />
-                  </div>
-                </div>
-
-
-                <div className="field">
-                  <button className="button is-link bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
-                    Send
-                  </button>
-                </div>
-              </form>
-            </div>
-
+          <form name="contact" method="POST" data-netlify="true">
+            <p>
+              <label>Your Name: <input type="text" name="name" /></label>
+            </p>
+            <p>
+              <label>Your Email: <input type="email" name="email" /></label>
+            </p>
+            <p>
+              <label>Your Role: <select name="role[]" multiple>
+                <option value="leader">Leader</option>
+                <option value="follower">Follower</option>
+              </select></label>
+            </p>
+            <p>
+              <label>Message: <textarea name="message"></textarea></label>
+            </p>
+            <p>
+              <button type="submit">Send</button>
+            </p>
+          </form>
           </div>
 
 
