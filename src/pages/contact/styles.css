@@ -1,0 +1,20 @@
+#button {
+  background: #DBCA08 !important;
+  display: block;
+  padding: 15px 30px;
+  font-weight: bold;
+  border-radius: 0px 10px 10px 0px;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+#email {
+  padding: 12px 50px 10px 10px;
+  background: no-repeat;
+  border: 1px solid #D8D8D8;
+  border-radius: 10px 0px 0px 10px;
+  border-right: none;
+  letter-spacing: 1px;
+}
+input::placeholder, textarea::placeholder {
+  color: #DBCA08;
+}

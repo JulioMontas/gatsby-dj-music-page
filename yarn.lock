@@ -10764,6 +10764,13 @@ react-color@^2.18.1:
     reactcss "^1.2.0"
     tinycolor2 "^1.4.1"
 
+react-confetti@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/react-confetti/-/react-confetti-6.1.0.tgz#03dc4340d955acd10b174dbf301f374a06e29ce6"
+  integrity sha512-7Ypx4vz0+g8ECVxr88W9zhcQpbeujJAVqL14ZnXJ3I23mOI9/oBVTQ3dkJhUmB0D6XOtCZEM6N0Gm9PMngkORw==
+  dependencies:
+    tween-functions "^1.2.0"
+
 react-datetime@^3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/react-datetime/-/react-datetime-3.1.1.tgz#adc346efda47653cfff9259c979f03f56106e48c"
@@ -11107,6 +11114,13 @@ react-transition-group@^4.0.0, react-transition-group@^4.3.0:
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
 
+react-use-window-size@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/react-use-window-size/-/react-use-window-size-1.0.1.tgz#ca1aec25c89a72264a09978ae240ef5505619263"
+  integrity sha512-2Rq4xP+Xy5tj6Wlxq76+i1zAhfDOVGB7t1eQuSAX+DmLrkW0VusH4XZANr+i4K1AmvwXu2Z8G9FgRvl+WT4g6w==
+  dependencies:
+    react "^16.8.6"
+
 react-virtualized-auto-sizer@^1.0.2:
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/react-virtualized-auto-sizer/-/react-virtualized-auto-sizer-1.0.7.tgz#bfb8414698ad1597912473de3e2e5f82180c1195"
@@ -11130,7 +11144,7 @@ react-window@^1.8.5:
     "@babel/runtime" "^7.0.0"
     memoize-one ">=3.1.1 <6"
 
-react@^16.8.4:
+react@^16.8.4, react@^16.8.6:
   version "16.14.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.14.0.tgz#94d776ddd0aaa37da3eda8fc5b6b18a4c9a3114d"
   integrity sha512-0X2CImDkJGApiAlcf0ODKIneSwBPhqJawOa5wCtKbu7ZECrmS26NvtSILynQ66cgkT/RJ4LidJOc3bUESwmU8g==
@@ -12815,6 +12829,11 @@ tunnel-agent@^0.6.0:
   dependencies:
     safe-buffer "^5.0.1"
 
+tween-functions@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/tween-functions/-/tween-functions-1.2.0.tgz#1ae3a50e7c60bb3def774eac707acbca73bbc3ff"
+  integrity sha512-PZBtLYcCLtEcjL14Fzb1gSxPBeL7nWvGhO5ZFPGqziCcr8uvHp0NDmdjBchp6KHL+tExcg0m3NISmKxhU394dA==
+
 type-check@^0.4.0, type-check@~0.4.0:
   version "0.4.0"
   resolved "https://registry.npmjs.org/type-check/-/type-check-0.4.0.tgz"
@@ -13262,6 +13281,13 @@ use-latest@^1.2.1:
   integrity sha512-xA+AVm/Wlg3e2P/JiItTziwS7FK92LWrDB0p+hgXloIMuVCeJJ8v6f0eeHyPZaJrM+usM1FkFfbNCrJGs8A/zw==
   dependencies:
     use-isomorphic-layout-effect "^1.1.1"
+
+use-window-size-v2@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/use-window-size-v2/-/use-window-size-v2-2.0.2.tgz#535b88f86ce803e988f83f439e8122e7eb4b89cb"
+  integrity sha512-yuN/kWyyWSX5GVr37nlwCl//vklua/PKHZpFdE+xBFUkyvjj935PqHOTGr1JoFCsGB6TdUlu+Fd3mZMcRKbPWw==
+  dependencies:
+    lodash.debounce "^4.0.8"
 
 utf8-byte-length@^1.0.1:
   version "1.0.4"

@@ -3,6 +3,7 @@ import { navigate } from "gatsby-link";
 import {Helmet} from "react-helmet";
 import Layout from "../../components/layout"
 import { motion } from "framer-motion"
+import "./styles.css";
 
 const easing = [.6, -.05, .01, .99];
 
@@ -63,7 +64,11 @@ export default class Index extends React.Component {
   render() {
     return (
       <Layout>
+      <motion.div exit={{ opacity: 0 }} initial='initial' animate='animate'>
+        <motion.div variants={stagger}>
         <div>
+
+        <motion.a variants={fadeInUp} href='mailto:montas@duck.com' className="text-2xl font-bold mb-10 block text-[#FFEA00] hover:underline">M O N T A S@Duck.com</motion.a>
           <form
             name="contact"
             method="post"
@@ -81,30 +86,33 @@ export default class Index extends React.Component {
               </label>
             </div>
 
-          <div className="field">
-            <label className="label" htmlFor={"email"}>
-              E-mail
-            </label>
-            <div className="control">
-              <input
-                placeholder="hello@domain.com"
-                type={"email"}
-                name={"email"}
-                onChange={this.handleChange}
-                id={"email"}
-                required={true}
-              />
+            <div className="flex">
+              <div className="field">
+                <div className="control">
+                  <input
+                    placeholder="Email"
+                    type={"email"}
+                    name={"email"}
+                    onChange={this.handleChange}
+                    id={"email"}
+                    required={true}
+                  />
+                </div>
+              </div>
+
+              <div className="field">
+                <button type="submit" id="button">
+                  Subscribe
+                </button>
+              </div>
             </div>
-          </div>
-
-          <div className="field">
-            <button type="submit">
-              Submit
-            </button>
-          </div>
-
         </form>
+
+        <motion.p variants={fadeInUp} className="font-bold justify-self-end mt-2 text-[#facc15]">Sign for my latest mixes and appearance or email me for booking or collaborations.</motion.p>
+
         </div>
+        </motion.div>
+      </motion.div>
       </Layout>
     );
   }
