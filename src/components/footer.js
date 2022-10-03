@@ -9,7 +9,7 @@ const Footer = ({ siteTitle }) => (
   <div className="container mx-auto">
     <div className="bg-[yellow] h-[1px]">
     </div>
-    <div className="flex items-center justify-between pt-[1.5vh]">
+    <div className="flex items-center justify-between sm:pt-[0.8vh] lg:pt-[1.5vh]">
       <h1 className="sm:text-sm lg:text-2xl">
         <Link to="/" className="text-[#FFEA00] font-bold uppercase tracking-widest hover:text-[#DBCA08]">
           M O N T Á S
