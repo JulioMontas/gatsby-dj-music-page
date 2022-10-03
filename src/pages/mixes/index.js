@@ -43,10 +43,10 @@ export default function MixesPage() {
         <link rel="canonical" href="https://montas.nyc/mixes" />
       </Helmet>
       <svg width="50" height="50" viewBox="0 0 50 50" className="transform-[rotate(-90deg)] fixed z-50">
-        <circle cx="25" cy="25" r="15" pathLength="1" className="stroke-[yellow]" />
+        <circle cx="17" cy="17" r="15" pathLength="1" className="stroke-[yellow]" />
         <motion.circle
-          cx="25"
-          cy="25"
+          cx="17"
+          cy="17"
           r="15"
           pathLength="1"
           className="stroke-[#888]"
