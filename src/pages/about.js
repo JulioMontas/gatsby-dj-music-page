@@ -54,7 +54,7 @@ export default function AboutPage() {
         />
       </svg>
       <motion.div exit={{ opacity: 0 }} initial='initial' animate='animate'>
-        <motion.div variants={stagger} ref={ref} className="h-[100vh] flex flex-col overflow-y-scroll ...">
+        <motion.div variants={stagger} ref={ref} className="h-[75vh] flex flex-col overflow-y-scroll ...">
 
           <motion.p variants={fadeInUp} className="sm:text-xl lg:text-4xl lg:leading-[4rem] sm:leading-[2.2rem] text-[#facc15] font-bold">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lectus libero, finibus et consectetur. Curabitur pharetra ac turpis ac consectetur pellentesque lobortis upretit Pellentesque lectus libero, finibus et consectetur. Curabitur pharetra ac turpis ac consectetur pellentesque lobortis upretit
