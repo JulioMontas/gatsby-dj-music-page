@@ -14,14 +14,14 @@ const Footer = ({ siteTitle }) => (
       </h1>
 
       <ul className="flex justify-around">
-        <li className="sm:text-sm">
-          <Link className="hover:text-[#DBCA08]" to="/mixes">🎹 Mixes</Link>
+        <li className="sm:text-[12px] lg:text-[16px]">
+          <Link className="hover:text-[#DBCA08]" to="/mixes">🎹Mixes</Link>
         </li>
-        <li className="sm:text-sm sm:px-4 ... lg:px-8 ...">
-          <Link className="hover:text-[#DBCA08]" to="/about/">🙍 Me</Link>
+        <li className="sm:text-[12px] lg:text-[16px] sm:px-[0.8rem] ... lg:px-8 ...">
+          <Link className="hover:text-[#DBCA08]" to="/about/">🙍Me</Link>
         </li>
-        <li className="sm:text-sm">
-          <Link className="hover:text-[#DBCA08]" to="/contact">✉️ Contact</Link>
+        <li className="sm:text-[12px] lg:text-[16px]">
+          <Link className="hover:text-[#DBCA08]" to="/contact">✉️Contact</Link>
         </li>
       </ul>
 
