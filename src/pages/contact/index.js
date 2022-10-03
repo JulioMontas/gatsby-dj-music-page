@@ -64,26 +64,21 @@ export default class Index extends React.Component {
     return (
       <Layout>
       <motion.div exit={{ opacity: 0 }} initial='initial' animate='animate'>
-        <motion.div variants={stagger} className="flex gap-10 items-center items-baseline sm:flex-col lg:flex-row-reverse">
-
-
-
+        <motion.div variants={stagger} className="flex gap-10 items-center items-baseline sm:flex-col">
         <div>
 
-        <motion.ul variants={fadeInUp} className="socialMediaLinks w-full mb-[3.2rem]">
-        <li>
-        <h2 variants={fadeInUp} className="justify-self-end mb-2 text-[#fde047] sm:text-sm tracking-wide">Social Media</h2>
-        </li>
-          <li>
-            <a href="https://soundcloud.com/juliomontas" className="block text-[#facc15] text-lg hover:underline border p-3 rounded">SoundCloud</a>
-          </li>
-          <li>
-            <a href="https://ra.co/dj/montas" className="block text-[#facc15] text-lg hover:underline border p-3 rounded mt-[1rem]">Resident Advisor</a>
-          </li>
-        </motion.ul>
+          <motion.ul variants={fadeInUp} className="socialMediaLinks w-full mb-[3.2rem]">
+            <li>
+              <h2 variants={fadeInUp} className="justify-self-end mb-2 text-[#fde047] sm:text-sm tracking-wide">Social Media</h2>
+            </li>
+            <li>
+              <a href="https://soundcloud.com/juliomontas" className="block text-[#facc15] text-lg hover:underline border p-3 rounded">SoundCloud</a>
+            </li>
+            <li>
+              <a href="https://ra.co/dj/montas" className="block text-[#facc15] text-lg hover:underline border p-3 rounded mt-[1rem]">Resident Advisor</a>
+            </li>
+          </motion.ul>
 
-
-          <motion.h2 variants={fadeInUp} className="justify-self-end mb-2 text-[#fde047] sm:text-sm tracking-wide">My latest mixes and appearances. 🎉</motion.h2>
           <motion.form variants={fadeInUp}
             name="contact"
             method="post"
@@ -92,6 +87,7 @@ export default class Index extends React.Component {
             data-netlify-honeypot="bot-field"
             onSubmit={this.handleSubmit}
           >
+            <h2 variants={fadeInUp} className="justify-self-end mb-2 text-[#fde047] sm:text-sm tracking-wide">My latest mixes and appearances. 🎉</h2>
             {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
             <input type="hidden" name="form-name" value="contact" />
             <div hidden>
@@ -121,25 +117,16 @@ export default class Index extends React.Component {
                 </button>
               </div>
             </div>
-        </motion.form>
-
-        <motion.a variants={fadeInUp}
-          href=""
-          className="block justify-self-end text-center font-bold rounded-[10px] sm:text-sm lg:text-base w-full mt-[4rem] bg-[#FFEA00] p-3 hover:bg-[#DBCA08]"
-        >
-          Contact me for booking or collaboration
-        </motion.a>
-
-
+          </motion.form>
+          
+          <motion.a variants={fadeInUp}
+            href=""
+            className="block justify-self-end text-center font-bold rounded-[10px] sm:text-sm lg:text-base w-full mt-[4rem] bg-[#FFEA00] p-3 hover:bg-[#DBCA08]"
+          >
+            Contact me for booking or collaboration
+          </motion.a>
 
         </div>
-
-
-
-
-
-
-
         </motion.div>
       </motion.div>
       </Layout>
