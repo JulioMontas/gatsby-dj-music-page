@@ -5,12 +5,12 @@ import { Link } from 'gatsby'
 const Footer = ({ siteTitle }) => (
 
   <>
-  <div className="bg-[#393939] fixed bottom-0 left-0 right-0 h-[5vh]">
+  <div className="bg-[#393939] fixed bottom-0 left-0 right-0 sm:h-[8vh] lg:h-[5vh]">
   <div className="container mx-auto">
     <div className="bg-[yellow] h-[1px]">
     </div>
-    <div className="flex items-center justify-between sm:pt-[0.8vh] lg:pt-[1.5vh]">
-      <h1 className="sm:text-sm lg:text-2xl">
+    <div className="flex items-center justify-between sm:pt-[2.5vh] lg:pt-[1.5vh]">
+      <h1 className="sm:text-lg lg:text-2xl">
         <Link to="/" className="text-[#FFEA00] font-bold uppercase tracking-widest hover:text-[#DBCA08]">
           M O N T Á S
         </Link>
