@@ -1,6 +1,5 @@
 import * as React from "react"
 import { navigate } from "gatsby-link";
-import {Helmet} from "react-helmet";
 import Layout from "../../components/layout"
 import { motion } from "framer-motion"
 import "./styles.css";
@@ -65,10 +64,11 @@ export default class Index extends React.Component {
     return (
       <Layout>
       <motion.div exit={{ opacity: 0 }} initial='initial' animate='animate'>
-        <motion.div variants={stagger}>
-        <div>
+        <motion.div variants={stagger} className="flex gap-20 items-center items-baseline sm:flex-col lg:flex-row">
 
-        <motion.a variants={fadeInUp} href='mailto:montas@duck.com' className="text-2xl font-bold mb-10 block text-[#FFEA00] hover:underline">M O N T A S@Duck.com</motion.a>
+        <p className="justify-self-end text-center mt-12 rounded-[10px] text-sm" id="button">For Booking or Collaboration</p>
+
+        <div>
           <form
             name="contact"
             method="post"
@@ -106,11 +106,16 @@ export default class Index extends React.Component {
                 </button>
               </div>
             </div>
+            <motion.h2 variants={fadeInUp} className="font-bold justify-self-end mt-2 text-[#facc15]">Sign up for my latest mixes and appearance. 🎉</motion.h2>
         </form>
-
-        <motion.p variants={fadeInUp} className="font-bold justify-self-end mt-2 text-[#facc15]">Sign for my latest mixes and appearance or email me for booking or collaborations.</motion.p>
-
         </div>
+
+
+        {/*
+        <div className="socialMediaLinks">
+        </div>
+        */}
+
         </motion.div>
       </motion.div>
       </Layout>

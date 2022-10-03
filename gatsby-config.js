@@ -5,6 +5,9 @@ module.exports = {
     description: `Blazing fast modern site generator for React`,
     twitterUsername: `@montas.nyc`,
   },
+  flags: {
+    DEV_SSR: true
+  },
   plugins: [
     "gatsby-plugin-netlify-cms",
     "gatsby-plugin-postcss",

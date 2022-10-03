@@ -4,24 +4,24 @@ import { Link } from 'gatsby'
 
 const Footer = ({ siteTitle }) => (
 
-  <div className="bg-[#393939] fixed bottom-0 left-0 right-0 sm:py[10px 0px 0px] h-[5vh]">
+  <div className="bg-[#393939] fixed bottom-0 left-0 right-0 sm:py[10px 0px 0px] h-[7vh]">
     <div className="flex items-center justify-around text-[#FFEA00] font-bold uppercase tracking-widest">
 
       <h1 className="sm:text-sm lg:text-2xl">
-        <Link to="/" className="hover:underline">
+        <Link to="/" className="hover:text-[#DBCA08]">
           M O N T Á S
         </Link>
       </h1>
 
       <ul className="flex justify-around">
         <li className="sm:text-sm">
-          <Link className="hover:underline" to="/mixes">Mixes</Link>
+          <Link className="hover:text-[#DBCA08]" to="/mixes">🎹 Mixes</Link>
         </li>
-        <li className="sm:text-sm sm:px-2.5 ... lg:px-4 ...">
-          <Link className="hover:underline" to="/about/">About</Link>
+        <li className="sm:text-sm sm:px-4 ... lg:px-8 ...">
+          <Link className="hover:text-[#DBCA08]" to="/about/">🙍 Me</Link>
         </li>
         <li className="sm:text-sm">
-          <Link className="hover:underline" to="/contact">Contact</Link>
+          <Link className="hover:text-[#DBCA08]" to="/contact">✉️ Contact</Link>
         </li>
       </ul>
 
