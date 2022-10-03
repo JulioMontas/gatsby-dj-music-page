@@ -15,13 +15,13 @@ const Footer = ({ siteTitle }) => (
 
       <ul className="flex justify-around">
         <li className="sm:text-[16px] lg:text-[21px]">
-          <Link className="hover:scale-[2] block transition duration-700  ease-out hover:ease-in-out" to="/mixes">🎹</Link>
+          <Link className="" to="/mixes">🎹</Link>
         </li>
         <li className="sm:text-[16px] lg:text-[21px] sm:px-[1.25rem] ... lg:px-8 ...">
-          <Link className="hover:scale-[2] block transition duration-700  ease-out hover:ease-in-out" to="/about/">🙍</Link>
+          <Link className="" to="/about/">🙍</Link>
         </li>
         <li className="sm:text-[16px] lg:text-[21px]">
-          <Link className="hover:scale-[2] block transition duration-700  ease-out hover:ease-in-out" to="/contact">✉️</Link>
+          <Link className="" to="/contact">✉️</Link>
         </li>
       </ul>
 
