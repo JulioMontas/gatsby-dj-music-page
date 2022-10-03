@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
   `)
   return (
     <>
-      <div className="grid grid-cols-1 place-items-center bg-[#393939] h-[95vh] w-full absolute">
+      <div className="grid grid-cols-1 place-items-center bg-[#393939] h-[95%] w-full absolute">
         <div className="container grid grid-cols-1 place-items-center">
           <motion.main
             initial={{ opacity: 0, x: 200 }}
