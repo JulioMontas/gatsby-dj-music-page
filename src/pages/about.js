@@ -60,7 +60,7 @@ export default function AboutPage() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lectus libero, finibus et consectetur. Curabitur pharetra ac turpis ac consectetur pellentesque lobortis upretit Pellentesque lectus libero, finibus et consectetur. Curabitur pharetra ac turpis ac consectetur pellentesque lobortis upretit
           </motion.p>
 
-          <motion.p variants={fadeInUp} className="sm:text-l lg:text-4xl lg:leading-[4rem] sm:leading-[1.8rem] text-[#fde047] font-medium pt-5 pb-5">
+          <motion.p variants={fadeInUp} className="sm:text-lg lg:text-4xl lg:leading-[4rem] sm:leading-[1.8rem] text-[#fde047] font-medium pt-5 pb-5">
             faucibus. Cras ornare arcu vitae neque lobortis varius. Vivamus varius ullamcorper leo, vel sollicitudin augue varius at. Proin lobortis vel orci bibendum facilisis.
           </motion.p>
 

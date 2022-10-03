@@ -1,5 +1,5 @@
 #button {
-  background: #DBCA08 !important;
+  background: #FFEA00 !important;
   display: block;
   padding: 17px 30px 13px;
   font-weight: bold;
@@ -9,7 +9,7 @@
   transition: 0.3s;
 }
 #button:hover{
-  background: #FFEA00 !important;
+  background: #DBCA08 !important;
 }
 #email {
   padding: 12px 50px 10px 10px;

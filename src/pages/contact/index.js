@@ -64,12 +64,27 @@ export default class Index extends React.Component {
     return (
       <Layout>
       <motion.div exit={{ opacity: 0 }} initial='initial' animate='animate'>
-        <motion.div variants={stagger} className="flex gap-20 items-center items-baseline sm:flex-col lg:flex-row">
+        <motion.div variants={stagger} className="flex gap-10 items-center items-baseline sm:flex-col lg:flex-row-reverse">
 
-        <p className="justify-self-end text-center mt-12 rounded-[10px] text-sm" id="button">For Booking or Collaboration</p>
+
 
         <div>
-          <form
+
+        <motion.ul variants={fadeInUp} className="socialMediaLinks w-full mb-[3.2rem]">
+        <li>
+        <h2 variants={fadeInUp} className="justify-self-end mb-2 text-[#fde047] sm:text-sm tracking-wide">Social Media</h2>
+        </li>
+          <li>
+            <a href="https://soundcloud.com/juliomontas" className="block text-[#facc15] text-lg hover:underline border p-3 rounded">SoundCloud</a>
+          </li>
+          <li>
+            <a href="https://ra.co/dj/montas" className="block text-[#facc15] text-lg hover:underline border p-3 rounded mt-[1rem]">Resident Advisor</a>
+          </li>
+        </motion.ul>
+
+
+          <motion.h2 variants={fadeInUp} className="justify-self-end mb-2 text-[#fde047] sm:text-sm tracking-wide">My latest mixes and appearances. 🎉</motion.h2>
+          <motion.form variants={fadeInUp}
             name="contact"
             method="post"
             action="/contact/success/"
@@ -106,15 +121,24 @@ export default class Index extends React.Component {
                 </button>
               </div>
             </div>
-            <motion.h2 variants={fadeInUp} className="font-bold justify-self-end mt-2 text-[#facc15]">Sign up for my latest mixes and appearance. 🎉</motion.h2>
-        </form>
+        </motion.form>
+
+        <motion.a variants={fadeInUp}
+          href=""
+          className="block justify-self-end text-center font-bold rounded-[10px] sm:text-sm lg:text-base w-full mt-[4rem] bg-[#FFEA00] p-3 hover:bg-[#DBCA08]"
+        >
+          Contact me for booking or collaboration
+        </motion.a>
+
+
+
         </div>
 
 
-        {/*
-        <div className="socialMediaLinks">
-        </div>
-        */}
+
+
+
+
 
         </motion.div>
       </motion.div>
