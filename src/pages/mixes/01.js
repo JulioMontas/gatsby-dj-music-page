@@ -2,6 +2,7 @@ import React from 'react'
 import { Canvas } from '@react-three/fiber'
 import Layout from "../../components/layout"
 import { PerspectiveCamera, PositionalAudio, OrbitControls, Stars, Sphere, Cone } from '@react-three/drei'
+import SongMP3 from "../../assets/test.mp3"
 
 function Box() {
   return (
@@ -23,6 +24,7 @@ export default function MusicPage() {
         <Cone>
           <meshBasicMaterial color="yellow" wireframe />
         </Cone>
+        <PositionalAudio autoplay loop url={SongMP3} distance={1} />
       </Canvas>
     </Layout>
   )
