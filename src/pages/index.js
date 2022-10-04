@@ -1,7 +1,9 @@
 import * as React from "react"
+import { Canvas } from '@react-three/fiber'
 import {Helmet} from "react-helmet";
 import Layout from "../components/layout"
-import DogVideo from "../assets/babysquare.mp4"
+import { PerspectiveCamera, PositionalAudio, OrbitControls, Stars, Sphere, Cone } from '@react-three/drei'
+
 
 export default function IndexPage() {
   return (
@@ -11,20 +13,15 @@ export default function IndexPage() {
         <meta name="description" content="From the Dominican Republic based in NYC." />
         <link rel="canonical" href="https://montas.nyc/" />
       </Helmet>
-
-      <svg height="240" width="400" className="sm:block lg:hidden">
-        <polygon points="220,10 300,210 123,234" fill="#FFEA00"/>
-      </svg>
-
-      <video autoPlay loop className="sm:hidden lg:block" style={{
-        right: `0`,
-        bottom: `0`,
-        minWidth: `100%`,
-        minHeight: `100%`,
-      }}>
-        <source src={DogVideo} type="video/mp4" />
-        Your browser does not support HTML5 video.
-      </video>
+      <Canvas className="w-[100vw] h-[100vh]">
+        <OrbitControls autoRotate />
+        <Stars />
+        <ambientLight intensity={0.5} />
+        <spotLight position={[10,15,10]} angle={0.3} />
+        <Cone>
+          <meshBasicMaterial color="yellow" wireframe />
+        </Cone>
+      </Canvas>
     </Layout>
   )
 }

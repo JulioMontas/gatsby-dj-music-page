@@ -1,13 +1,13 @@
 import React from 'react'
 import { Canvas } from '@react-three/fiber'
 import Layout from "../../components/layout"
-import { PerspectiveCamera, PositionalAudio, OrbitControls, Stars } from '@react-three/drei'
+import { PerspectiveCamera, PositionalAudio, OrbitControls, Stars, Sphere, Cone } from '@react-three/drei'
 
 function Box() {
   return (
     <mesh>
       <boxBufferGeometry attach="geometry" />
-      <meshLambertMaterial attach="material" color="yellow" />
+      <meshLambertMaterial attach="material" color="yellow" wireframe />
     </mesh>
   );
 }
@@ -20,6 +20,9 @@ export default function MusicPage() {
         <ambientLight intensity={0.5} />
         <spotLight position={[10,15,10]} angle={0.3} />
         <Box />
+        <Cone>
+          <meshBasicMaterial color="yellow" wireframe />
+        </Cone>
       </Canvas>
     </Layout>
   )
