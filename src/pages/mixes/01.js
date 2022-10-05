@@ -4,21 +4,16 @@ import Layout from "../../components/layout"
 import { PerspectiveCamera, OrbitControls, Stars, Text, Text3D, Cone, Float, Center } from '@react-three/drei'
 import SongMP3 from "../../assets/test.mp3"
 import Liquido from "../../assets/LIQUIDO_Fluid_Regular.json"
+import ReactSoundcloud from 'react-soundcloud-embed';
 
-
-function Box() {
-  return (
-    <mesh>
-      <boxBufferGeometry attach="geometry" />
-      <meshLambertMaterial attach="material" color="yellow" wireframe />
-    </mesh>
-  );
-}
 export default function MusicPage() {
   return (
     <Layout>
+      <div className="w-[100vw] fixed z-50 opacity-25 hover:opacity-100 transition-all duration-700">
+        <ReactSoundcloud url="https://soundcloud.com/juliomontas/half-and-half-raw-studio-mix"/>
+      </div>
       <Canvas className="w-[100vw] h-[100vh]">
-      <PerspectiveCamera makeDefault fox={75} position={[0,0,15]} />
+      <PerspectiveCamera makeDefault fox={75} position={[0,0,5]} />
         <OrbitControls autoRotate />
         <Stars />
         <ambientLight intensity={0.5} />

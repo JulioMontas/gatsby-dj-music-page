@@ -40,6 +40,7 @@
     "react-confetti": "^6.1.0",
     "react-dom": "^18.1.0",
     "react-helmet": "^6.1.0",
+    "react-soundcloud-embed": "^1.0.3",
     "react-use-window-size": "^1.0.1",
     "three": "^0.145.0",
     "use-window-size-v2": "^2.0.2"
