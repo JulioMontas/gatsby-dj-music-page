@@ -21,7 +21,7 @@ export default function MusicPage() {
         <Center>
           <Float floatIntensity={5} speed={2}>
            <Text3D font={Liquido} bevelEnabled bevelSize={0.06}>
-              Half And Half - Raw Studio Mix
+              Half And Half ( Raw Studio Mix )
               <meshNormalMaterial />
             </Text3D>
           </Float>
