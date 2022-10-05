@@ -2,8 +2,7 @@ import * as React from "react"
 import { Canvas } from '@react-three/fiber'
 import {Helmet} from "react-helmet";
 import Layout from "../components/layout"
-import { PerspectiveCamera, PositionalAudio, OrbitControls, Stars, Sphere, Cone } from '@react-three/drei'
-
+import { PerspectiveCamera, PositionalAudio, OrbitControls, Stars, Sphere, Text, Text3D, Cone, Float, Center } from '@react-three/drei'
 
 export default function IndexPage() {
   return (
@@ -14,6 +13,7 @@ export default function IndexPage() {
         <link rel="canonical" href="https://montas.nyc/" />
       </Helmet>
       <Canvas className="w-[100vw] h-[100vh]">
+        <PerspectiveCamera makeDefault fox={75} position={[0,0,5]} />
         <OrbitControls autoRotate />
         <Stars />
         <ambientLight intensity={0.5} />

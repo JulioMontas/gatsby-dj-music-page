@@ -64,20 +64,36 @@ export default class Index extends React.Component {
     return (
       <Layout>
       <motion.div exit={{ opacity: 0 }} initial='initial' animate='animate'>
-        <motion.div variants={stagger} className="flex gap-10 items-center items-baseline sm:flex-col">
-        <div>
+        <motion.div variants={stagger} className="flex gap-10 items-center items-baseline sm:flex-col tracking-widest">
+        <div className="sm:w-[90vw] lg:w-[45vw] grid gap-20">
 
-          <motion.ul variants={fadeInUp} className="socialMediaLinks w-full mb-[3.2rem]">
-            <li>
-              <h2 variants={fadeInUp} className="justify-self-end mb-2 text-[#fde047] sm:text-sm tracking-wide">Social Media</h2>
+          <motion.ul variants={fadeInUp} className="socialMediaLinks">
+            <li className="mb-2">
+              <h2 variants={fadeInUp} className="justify-self-end text-[#fde047] sm:text-sm lg:text-[18px]">Follow Me</h2>
             </li>
             <li>
-              <a href="https://soundcloud.com/juliomontas" className="block text-[#facc15] text-lg hover:underline border p-3 rounded">SoundCloud</a>
+              <a href="https://soundcloud.com/juliomontas" className="block bg-[rgba(150,150,150,0.10)] border-[#ECD905] border-2 text-[#facc15] text-lg rounded-[10px] pl-3 pt-4 pb-3 hover:border-[#333] transition-all duration-700">SoundCloud</a>
             </li>
-            <li>
-              <a href="https://ra.co/dj/montas" className="block text-[#facc15] text-lg hover:underline border p-3 rounded mt-[1rem]">Resident Advisor</a>
+            <li className="mt-[1rem]">
+              <a href="https://ra.co/dj/montas" className="block bg-[rgba(150,150,150,0.10)] border-[#ECD905] border-2 text-[#facc15] text-lg rounded-[10px] pl-3 pt-4 pb-3 hover:border-[#333] transition-all duration-700">Resident Advisor</a>
             </li>
           </motion.ul>
+
+          <motion.div variants={fadeInUp}>
+            <h2 variants={fadeInUp} className="justify-self-end mb-3 text-[#fde047] sm:text-sm lg:text-[18px]">Contact Me</h2>
+            <a variants={fadeInUp}
+              href=""
+              className="block bg-[rgba(150,150,150,0.10)] border-[#ECD905] border-2 text-[#facc15] text-lg rounded-[10px] pl-3 pt-4 pb-3 hover:border-[#333] transition-all duration-700"
+            >
+              Booking
+            </a>
+            <a variants={fadeInUp}
+              href=""
+              className="mt-[1rem] block bg-[rgba(150,150,150,0.10)] border-[#ECD905] border-2 text-[#facc15] text-lg rounded-[10px] pl-3 pt-4 pb-3 hover:border-[#333] transition-all duration-700"
+            >
+              Collaboration
+            </a>
+          </motion.div>
 
           <motion.form variants={fadeInUp}
             name="contact"
@@ -87,7 +103,7 @@ export default class Index extends React.Component {
             data-netlify-honeypot="bot-field"
             onSubmit={this.handleSubmit}
           >
-            <h2 variants={fadeInUp} className="justify-self-end mb-2 text-[#fde047] sm:text-sm tracking-wide">My latest mixes and appearances. 🎉</h2>
+            <h2 variants={fadeInUp} className="justify-self-end mb-3 text-[#fde047] sm:text-sm lg:text-[18px]">Stay Updated 🎉</h2>
             {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
             <input type="hidden" name="form-name" value="contact" />
             <div hidden>
@@ -96,35 +112,26 @@ export default class Index extends React.Component {
                 <input name="bot-field" onChange={this.handleChange} />
               </label>
             </div>
-
             <div className="flex">
               <div className="field">
-                <div className="control">
+                <div className="control w-full">
                   <input
                     placeholder="Email"
                     type={"email"}
                     name={"email"}
                     onChange={this.handleChange}
-                    id={"email"}
                     required={true}
+                    className="bg-[rgba(150,150,150,0.10)] border-[#ECD905] border-2 text-[#facc15] text-sm rounded-tl-[10px] rounded-bl-[10px] pl-3 pt-[1.2rem] pb-[0.8rem] tracking-widest w-[200px]"
                   />
                 </div>
               </div>
-
               <div className="field">
-                <button type="submit" id="button">
+                <button type="submit" className="bg-[rgba(150,150,150,0.10)] bg-[#ECD905] text-[#333] text-lg rounded-br-[10px] rounded-tr-[10px] w-full pt-4 pb-3 w-[120px]">
                   Subscribe
                 </button>
               </div>
             </div>
           </motion.form>
-          
-          <motion.a variants={fadeInUp}
-            href=""
-            className="block justify-self-end text-center font-bold rounded-[10px] sm:text-sm lg:text-base w-full mt-[4rem] bg-[#FFEA00] p-3 hover:bg-[#DBCA08]"
-          >
-            Contact me for booking or collaboration
-          </motion.a>
 
         </div>
         </motion.div>

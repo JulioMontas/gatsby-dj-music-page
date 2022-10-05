@@ -5,7 +5,7 @@ import { Link } from 'gatsby'
 const Footer = ({ siteTitle }) => (
 
   <>
-  <div className="bg-[#393939] fixed bottom-0 left-0 right-0 sm:h-[8vh] lg:h-[5vh]">
+  <div className="bg-[#333] fixed bottom-0 left-0 right-0 sm:h-[8vh] lg:h-[5vh]">
   <div className="container mx-auto">
     <div className="bg-[yellow] h-[1px]">
     </div>
