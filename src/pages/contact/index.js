@@ -1,8 +1,7 @@
 import * as React from "react"
 import { navigate } from "gatsby-link";
 import Layout from "../../components/layout"
-import { motion } from "framer-motion"
-import "./styles.css";
+import { motion } from "framer-motion" 
 
 const easing = [.6, -.05, .01, .99];
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Canvas } from '@react-three/fiber'
 import Layout from "../../components/layout"
-import { PerspectiveCamera, PositionalAudio, OrbitControls, Stars, Text, Text3D, Cone, Float, Center } from '@react-three/drei'
+import { PerspectiveCamera, OrbitControls, Stars, Text, Text3D, Cone, Float, Center } from '@react-three/drei'
 import SongMP3 from "../../assets/test.mp3"
 import Liquido from "../../assets/LIQUIDO_Fluid_Regular.json"
 
