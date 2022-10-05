@@ -58,7 +58,7 @@ export default function MixesPage() {
       <motion.div exit={{ opacity: 0 }} initial='initial' animate='animate'>
         <motion.ul variants={stagger} ref={ref} className="container w-full flex gap-[1rem] overflow-x-scroll ...">
           <motion.li variants={fadeInUp}>
-            <Link className="block bg-[rgba(150,150,150,0.10)] border-2 border-[#ECD905] h-[85vh] sm:w-[280px] lg:w-[320px] rounded-tl-[195.5px] rounded-tr-[10px] rounded-br-[195.5px] rounded-bl-[30px] hover:border-[#333] transition-all duration-700" to="/mixes/01"></Link>
+            <Link className="block bg-[rgba(150,150,150,0.10)] border-2 border-[#ECD905] sm:h-[75vh] lg:h-[85vh] sm:w-[280px] lg:w-[320px] rounded-tl-[195.5px] rounded-tr-[10px] rounded-br-[195.5px] rounded-bl-[30px] hover:border-[#333] transition-all duration-700" to="/mixes/01"></Link>
           </motion.li>
           {/*
           <motion.li variants={fadeInUp}>

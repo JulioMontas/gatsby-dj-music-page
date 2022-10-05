@@ -1,7 +1,7 @@
 import * as React from "react"
 import { navigate } from "gatsby-link";
 import Layout from "../../components/layout"
-import { motion } from "framer-motion" 
+import { motion } from "framer-motion"
 
 const easing = [.6, -.05, .01, .99];
 
@@ -63,7 +63,7 @@ export default class Index extends React.Component {
     return (
       <Layout>
       <motion.div exit={{ opacity: 0 }} initial='initial' animate='animate'>
-        <motion.div variants={stagger} className="flex gap-10 items-center items-baseline sm:flex-col tracking-widest">
+        <motion.div variants={stagger} className="flex sm:gap-1 lg:gap-10 items-center items-baseline sm:flex-col tracking-widest">
         <div className="sm:w-[90vw] lg:w-[45vw] grid gap-20">
 
           <motion.ul variants={fadeInUp} className="socialMediaLinks">
