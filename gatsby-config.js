@@ -9,6 +9,19 @@ module.exports = {
     DEV_SSR: true
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `M O N T A S`,
+        short_name: `M O N T A S`,
+        description: `Guide for residents of the ABC123 Smart Home`,
+        start_url: `/`,
+        background_color: `#333`,
+        theme_color: `#333`,
+        display: `standalone`,
+        icon: `src/images/icon.png`,
+      },
+    },
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-netlify-cms",
     "gatsby-plugin-postcss",
