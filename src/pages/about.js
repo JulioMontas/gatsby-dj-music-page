@@ -3,7 +3,7 @@ import {Helmet} from "react-helmet";
 import Layout from "../components/layout"
 import { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
-import "./mixes/styles.css";
+import "./music/mixes/styles.css";
 import { StaticImage } from "gatsby-plugin-image"
 
 const easing = [.6, -.05, .01, .99];

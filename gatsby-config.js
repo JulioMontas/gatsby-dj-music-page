@@ -9,6 +9,7 @@ module.exports = {
     DEV_SSR: true
   },
   plugins: [
+    "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-netlify-cms",
     "gatsby-plugin-postcss",
     {

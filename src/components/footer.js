@@ -17,7 +17,7 @@ const Footer = ({ siteTitle }) => (
       </h1>
       <ul className="flex justify-around">
         <li className="sm:text-[16px] lg:text-[21px]">
-          <Link className="" to="/mixes">🎹</Link>
+          <Link className="" to="/music/mixes">🎹</Link>
         </li>
         <li className="sm:text-[16px] lg:text-[21px] sm:px-[1.25rem] ... lg:px-8 ...">
           <Link className="" to="/about/">🙍</Link>

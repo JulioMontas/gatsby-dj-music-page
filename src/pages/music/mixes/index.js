@@ -1,10 +1,10 @@
 import * as React from "react"
 import {Helmet} from "react-helmet";
-import Layout from "../../components/layout"
+import Layout from "../../../components/layout"
 import { Link } from 'gatsby'
 import { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
-import "./styles.css";
+// import "./styles.css";
 
 const easing = [.6, -.05, .01, .99];
 
@@ -59,7 +59,10 @@ export default function MixesPage() {
         <motion.ul variants={stagger} ref={ref} className="container w-full flex gap-[1rem] overflow-x-scroll ...">
 
           <motion.li variants={fadeInUp}>
-            <Link className="block bg-[rgba(150,150,150,0.10)] border-2 border-[#ECD905] sm:h-[75vh] lg:h-[85vh] sm:w-[280px] lg:w-[320px] rounded-tl-[195.5px] rounded-tr-[10px] rounded-br-[195.5px] rounded-bl-[30px] hover:border-[#333] transition-all duration-700" to="/mixes/half-and-half-raw-studio-mix">
+            <Link
+              className="block bg-fixed bg-[rgba(150,150,150,0.10)] border-2 border-[#ECD905] sm:h-[75vh] lg:h-[85vh] sm:w-[280px] lg:w-[320px] rounded-tl-[195.5px] rounded-tr-[10px] rounded-br-[195.5px] rounded-bl-[30px] hover:border-[#333] transition-all duration-700"
+              to="/music/mixes/half-and-half-raw-studio-mix"
+            >
               <h2 className="mt-[20vh] px-[10px] text-center text-[yellow] tracking-wider text-[18px]">
                 Half and Half (Raw Studio Mix)
               </h2>

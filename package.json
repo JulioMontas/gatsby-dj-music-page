@@ -25,6 +25,7 @@
     "framer": "^2.2.0",
     "framer-motion": "^7.5.1",
     "gatsby": "^4.23.0",
+    "gatsby-plugin-gatsby-cloud": "^4.24.0",
     "gatsby-plugin-google-analytics": "^4.23.0",
     "gatsby-plugin-image": "^2.23.0",
     "gatsby-plugin-manifest": "^4.23.0",
