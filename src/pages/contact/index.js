@@ -71,10 +71,24 @@ export default class Index extends React.Component {
               <h2 variants={fadeInUp} className="justify-self-end text-[#fde047] sm:text-sm lg:text-[18px]">Follow Me</h2>
             </li>
             <li>
-              <a href="https://soundcloud.com/juliomontas" className="block bg-[rgba(150,150,150,0.10)] border-[#ECD905] border-2 text-[#facc15] text-lg rounded-[10px] pl-3 pt-4 pb-3 hover:border-[#333] transition-all duration-700">SoundCloud</a>
+              <a href="https://ra.co/dj/montas" target="_blank" className="block bg-[rgba(150,150,150,0.10)] border-[#ECD905] border-2 text-[#facc15] text-lg rounded-[10px] pl-3 pt-4 pb-3 hover:border-[#333] transition-all duration-700">
+                Resident Advisor
+              </a>
             </li>
             <li className="mt-[1rem]">
-              <a href="https://ra.co/dj/montas" className="block bg-[rgba(150,150,150,0.10)] border-[#ECD905] border-2 text-[#facc15] text-lg rounded-[10px] pl-3 pt-4 pb-3 hover:border-[#333] transition-all duration-700">Resident Advisor</a>
+              <a href="https://soundcloud.com/juliomontas" target="_blank" className="block bg-[rgba(150,150,150,0.10)] border-[#ECD905] border-2 text-[#facc15] text-lg rounded-[10px] pl-3 pt-4 pb-3 hover:border-[#333] transition-all duration-700">
+                SoundCloud
+              </a>
+            </li>
+            <li className="mt-[1rem]">
+              <a href="https://instagram.com/juliomontas" target="_blank" className="block bg-[rgba(150,150,150,0.10)] border-[#ECD905] border-2 text-[#facc15] text-lg rounded-[10px] pl-3 pt-4 pb-3 hover:border-[#333] transition-all duration-700">
+                Instagram
+              </a>
+            </li>
+            <li className="mt-[1rem]">
+              <a href="https://www.twitch.tv/montasmusic" target="_blank" className="block bg-[rgba(150,150,150,0.10)] border-[#ECD905] border-2 text-[#facc15] text-lg rounded-[10px] pl-3 pt-4 pb-3 hover:border-[#333] transition-all duration-700">
+                Twitch
+              </a>
             </li>
           </motion.ul>
 
@@ -84,13 +98,13 @@ export default class Index extends React.Component {
               href=""
               className="block bg-[rgba(150,150,150,0.10)] border-[#ECD905] border-2 text-[#facc15] text-lg rounded-[10px] pl-3 pt-4 pb-3 hover:border-[#333] transition-all duration-700"
             >
-              Booking
+              Collaboration
             </a>
             <a variants={fadeInUp}
               href=""
               className="mt-[1rem] block bg-[rgba(150,150,150,0.10)] border-[#ECD905] border-2 text-[#facc15] text-lg rounded-[10px] pl-3 pt-4 pb-3 hover:border-[#333] transition-all duration-700"
             >
-              Collaboration
+              Booking
             </a>
           </motion.div>
 

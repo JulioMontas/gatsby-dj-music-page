@@ -38,7 +38,7 @@ export default function MixesPage() {
   return (
     <Layout>
       <Helmet>
-        <title>Mixes • DJ & Producer – The Official Website</title>
+        <title>Mixes • DJ & Producer – Official Website</title>
         <meta name="description" content="From the Dominican Republic based in NYC." />
         <link rel="canonical" href="https://montas.nyc/mixes" />
       </Helmet>
@@ -57,8 +57,13 @@ export default function MixesPage() {
       */}
       <motion.div exit={{ opacity: 0 }} initial='initial' animate='animate'>
         <motion.ul variants={stagger} ref={ref} className="container w-full flex gap-[1rem] overflow-x-scroll ...">
+
           <motion.li variants={fadeInUp}>
-            <Link className="block bg-[rgba(150,150,150,0.10)] border-2 border-[#ECD905] sm:h-[75vh] lg:h-[85vh] sm:w-[280px] lg:w-[320px] rounded-tl-[195.5px] rounded-tr-[10px] rounded-br-[195.5px] rounded-bl-[30px] hover:border-[#333] transition-all duration-700" to="/mixes/01"></Link>
+            <Link className="block bg-[rgba(150,150,150,0.10)] border-2 border-[#ECD905] sm:h-[75vh] lg:h-[85vh] sm:w-[280px] lg:w-[320px] rounded-tl-[195.5px] rounded-tr-[10px] rounded-br-[195.5px] rounded-bl-[30px] hover:border-[#333] transition-all duration-700" to="/mixes/half-and-half-raw-studio-mix">
+              <h2 className="mt-[20vh] px-[10px] text-center text-[yellow] tracking-wider text-[18px]">
+                Half and Half (Raw Studio Mix)
+              </h2>
+            </Link>
           </motion.li>
           {/*
           <motion.li variants={fadeInUp}>

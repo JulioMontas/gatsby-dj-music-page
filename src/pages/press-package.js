@@ -6,7 +6,7 @@ export default function AboutPage() {
   return (
     <Layout>
       <Helmet>
-        <title>Press Package • DJ & Producer – The Official Websitec</title>
+        <title>Press Package • DJ & Producer – Official Websitec</title>
         <meta name="description" content="Press Package" />
         <link rel="canonical" href="https://montas.nyc/about" />
       </Helmet>

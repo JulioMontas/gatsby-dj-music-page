@@ -38,7 +38,7 @@ export default function AboutPage() {
   return (
     <Layout>
       <Helmet>
-        <title>About Me • DJ & Producer – The Official Website</title>
+        <title>About Me • DJ & Producer – Official Website</title>
         <meta name="description" content="From the Dominican Republic based in NYC." />
         <link rel="canonical" href="https://montas.nyc/about" />
       </Helmet>

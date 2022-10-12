@@ -8,7 +8,7 @@ export default function IndexPage() {
   return (
     <Layout>
       <Helmet>
-        <title>M O N T Á S • DJ & Producer – The Official Website</title>
+        <title>M O N T Á S • DJ & Producer – Official Website</title>
         <meta name="description" content="From the Dominican Republic based in NYC." />
         <link rel="canonical" href="https://montas.nyc/" />
       </Helmet>
