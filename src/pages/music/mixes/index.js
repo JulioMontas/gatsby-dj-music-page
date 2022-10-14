@@ -63,7 +63,7 @@ export default function MixesPage() {
               className="block bg-fixed opacity-70 bg-no-repeat bg-center bg-[url('https://raw.githubusercontent.com/JulioMontas/JulioMontas.com-PHP/master/img/projects/SlitScan/slit_scan05.jpg')] bg-[rgba(150,150,150,0.10)] border-4 border-[#ECD905] sm:h-[75vh] lg:h-[85vh] sm:w-[280px] lg:w-[320px] rounded-tl-[195.5px] rounded-tr-[10px] rounded-br-[195.5px] rounded-bl-[30px] hover:border-[#333] transition-all duration-700"
               to="/music/mixes/half-and-half-raw-studio-mix"
             >
-              <h2 className="mt-[20vh] text-center font-bold text-[black] py-3 tracking-wider text-[18px] bg-[rgba(255,255,150,0.85)]">
+              <h2 className="mt-[20vh] text-center font-normal text-[yellow] py-3 tracking-wider text-[18px] bg-[rgba(0,0,0,0.85)]">
                 Half and Half (Raw Studio Mix)
               </h2>
             </Link>
