@@ -94,20 +94,25 @@ export default class Index extends React.Component {
 
           <motion.div variants={fadeInUp}>
             <h2 variants={fadeInUp} className="justify-self-end mb-3 text-[#fde047] sm:text-sm lg:text-[18px]">Contact Me</h2>
+            {/*
             <a variants={fadeInUp}
               href=""
               className="block bg-[rgba(150,150,150,0.10)] border-[#ECD905] border-2 text-[#facc15] text-lg rounded-[10px] pl-3 pt-4 pb-3 hover:border-[#333] transition-all duration-700"
             >
               Collaboration
             </a>
+            */}
             <a variants={fadeInUp}
-              href=""
+              href="https://forms.gle/BFRcoQSZryhp3dWz6"
+              target="_blank"
               className="mt-[1rem] block bg-[rgba(150,150,150,0.10)] border-[#ECD905] border-2 text-[#facc15] text-lg rounded-[10px] pl-3 pt-4 pb-3 hover:border-[#333] transition-all duration-700"
             >
               Booking
             </a>
           </motion.div>
 
+
+          {/*
           <motion.form variants={fadeInUp}
             name="contact"
             method="post"
@@ -117,7 +122,6 @@ export default class Index extends React.Component {
             onSubmit={this.handleSubmit}
           >
             <h2 variants={fadeInUp} className="justify-self-end mb-3 text-[#fde047] sm:text-sm lg:text-[18px]">Stay Updated 🎉</h2>
-            {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
             <input type="hidden" name="form-name" value="contact" />
             <div hidden>
               <label>
@@ -145,6 +149,7 @@ export default class Index extends React.Component {
               </div>
             </div>
           </motion.form>
+          */}
 
         </div>
         </motion.div>
