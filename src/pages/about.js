@@ -57,15 +57,11 @@ export default function AboutPage() {
         <motion.div variants={stagger} ref={ref} className="sm:h-[75vh] lg:h-[85vh] flex flex-col overflow-y-scroll ...">
 
           <motion.p variants={fadeInUp} className="sm:text-xl lg:text-4xl lg:leading-[4rem] sm:leading-[2.2rem] text-[#facc15] font-bold pt-[2.5rem]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lectus libero, finibus et consectetur. Curabitur pharetra ac turpis ac consectetur pellentesque lobortis upretit Pellentesque lectus libero, finibus et consectetur. Curabitur pharetra ac turpis ac consectetur pellentesque lobortis upretit
+            As a DJ specializing in minimal house music, my goal is to create a unique and immersive listening experience for my audience. In my sets, I focus on using a stripped-down, minimalist production style and repetitive, hypnotic rhythms to build a subtle, atmospheric vibe. I try to avoid relying on big drops or overt melodies, and instead aim to create a sense of atmosphere and immersion.
           </motion.p>
 
           <motion.p variants={fadeInUp} className="sm:text-lg lg:text-4xl lg:leading-[4rem] sm:leading-[1.8rem] text-[#fde047] font-medium pt-5 pb-5">
-            faucibus. Cras ornare arcu vitae neque lobortis varius. Vivamus varius ullamcorper leo, vel sollicitudin augue varius at. Proin lobortis vel orci bibendum facilisis.
-          </motion.p>
-
-          <motion.p variants={fadeInUp} className="sm:text-s lg:text-2xl lg:leading-[3rem] sm:leading-[1.7rem] text-[#fef08a] font-light pb-5">
-            EEtiam nec facilisis mauris. Suspendisse dictum ipsum magna, eget tincidunt arcu interdum in. Etiam tristique tincidunt congue. Proin ac sodales velit. Vivamus varius ullamcorper leo, vel sollicitudin augue Cras ornare arcu vitae neque lobortis varius curabitur neque
+            I take my musicality and crowd reading skills very seriously, and I always try to select tracks that will engage and energize the audience. Whether I'm playing at a club or a music festival, my goal is always to create a memorable and enjoyable listening experience for my audience.
           </motion.p>
 
           <motion.div variants={fadeInUp}>
@@ -78,6 +74,10 @@ export default function AboutPage() {
           </motion.div>
 
           <motion.small variants={fadeInUp} className="sm:text-[14px] text-[#fef08a] pt-2">Photography by @digitalonly.jpeg</motion.small>
+
+          <motion.p variants={fadeInUp} className="sm:text-s lg:text-2xl lg:leading-[3rem] sm:leading-[1.7rem] text-[#fef08a] font-light pb-5">
+            On SoundCloud, you can find my latest tracks and remixes, as well as recordings of my live sets. I also use the platform to share behind-the-scenes glimpses of my production process and to connect with other DJs and fans of minimal house music. Thank you for checking out my page and for supporting my music. I hope you enjoy what you hear!
+          </motion.p>
 
         </motion.div>
       </motion.div>
